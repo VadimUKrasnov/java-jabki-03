@@ -1,11 +1,10 @@
-# Файлы, игнорируемые по умолчанию
-/shelf/
-/workspace.xml
-
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
+.idea
+java-test.iml
 
 ### Eclipse ###
 .apt_generated
