@@ -359,7 +359,6 @@ public class Main {
             System.out.println("Нули отсутствуют.");
         }
 
-
         System.out.println();
 
         // break & continue
@@ -396,14 +395,7 @@ public class Main {
                 res1 += numberList3[m];
         }
         System.out.println("Сумма: " + res1);
-
-        System.out.println();
-
-
-
-
     }
-
 }
 
 
