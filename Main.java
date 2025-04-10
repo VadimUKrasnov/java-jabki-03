@@ -107,11 +107,11 @@ public class Main {
         System.out.println();
 
         // 2. Даны два числа. Выведите «Первое больше», «Второе больше» или «Равны»
-        int num1 = 5;
-        int num2 = 5;
-        if (num1 > num2) {
+        int d = 5;
+        int e = 5;
+        if (d > e) {
             System.out.println("Первое больше");
-        } else if (num1 < num2) {
+        } else if (d < e) {
             System.out.println("Второе больше");
         } else {
             System.out.println("Равны");
@@ -120,12 +120,12 @@ public class Main {
         System.out.println();
 
         // 3. Дано число. Выведите «Положительное», «Отрицательное» или «Равно нулю»
-        int numbe = 0;
-        if (numbe > 0) {
+        int c = 0;
+        if (c > 0) {
             System.out.println("Положительное");
-        } else if (numbe < 0) {
+        } else if (c < 0) {
             System.out.println("Отрицательное");
-        } else if (numbe == 0) {
+        } else if (c == 0) {
             System.out.println("Равно нулю");
         }
 
@@ -153,20 +153,20 @@ public class Main {
 
         // Тернарный оператор
         // 1. Дано число. Используя тернарный оператор, определите, положительное, отрицательное или нулевое
-        int numb = -1;
-        System.out.println(numb > 0 ? "Положительное" : numb < 0 ? "Отрицательное" : "Нулевое");
+        int f = -1;
+        System.out.println(f > 0 ? "Положительное" : f < 0 ? "Отрицательное" : "Нулевое");
 
         System.out.println();
 
         // 2. Дано число. С помощью тернарного оператора проверьте, делится ли оно на 3 и 5 одновременно. Выведите «Кратно» или «Не кратно»
-        int numOne = 45;
-        System.out.println(numOne % 3 == 0 && numOne % 5 == 0 ? "Кратно" : "Не кратно");
+        int g = 45;
+        System.out.println(g % 3 == 0 && g % 5 == 0 ? "Кратно" : "Не кратно");
 
         System.out.println();
 
         // 3. Для заданного числа верните строку «Четное» или «Нечетное», используя тернарный оператор.
-        int numTwo = 8;
-        System.out.println(numTwo % 2 == 0 ? "Чётное" : "Нечётное");
+        int h = 8;
+        System.out.println(h % 2 == 0 ? "Чётное" : "Нечётное");
 
         System.out.println();
 
@@ -301,14 +301,14 @@ public class Main {
         System.out.println();
 
         //3. Дано число. Определите, является ли оно простым
-        int nom = 10;
+        int k = 10;
         boolean isPrime = true;
-        if (nom <= 1) {
+        if (k <= 1) {
             isPrime = false;
         } else {
             int i = 2;
-            while (i <= Math.sqrt(nom)) {
-                if (nom % i == 0) { //
+            while (i <= Math.sqrt(k)) {
+                if (k % i == 0) {
                     isPrime = false;
                     break;
                 }
@@ -316,9 +316,9 @@ public class Main {
             }
         }
         if (isPrime) {
-            System.out.println(nom + " является простым числом.");
+            System.out.println(k + " является простым числом.");
         } else {
-            System.out.println(nom + " не является простым числом.");
+            System.out.println(k + " не является простым числом.");
         }
 
         System.out.println();
@@ -363,11 +363,11 @@ public class Main {
 
         // break & continue
         // 1. Выведите все числа от 1 до 20, кроме тех, что делятся на 3
-        for (int o = 0; o <= 20; o++) {
-                if (o % 3 == 0) {
-                    continue;
-                }
-                System.out.println(o);
+        for (int l = 0; l <= 20; l++) {
+            if (l % 3 == 0) {
+                continue;
+            }
+            System.out.println(l);
         }
 
         System.out.println();
@@ -388,28 +388,12 @@ public class Main {
         // 3. Дан список чисел. Суммируйте элементы, пока сумма не превысит 100
         int[] numberList3 = {15, 20, 30, 40, 50, 60, 70};
         int res1 = 0;
-        for (int m = 0; m <= numberList3.length; m++) {
-                if (res1 + numberList3[m] > 100) {
+        for (int m = 0; m < numberList3.length; m++) {
+            res1 += numberList3[m];
+                if (res1 > 100) {
                     break;
                 }
-                res1 += numberList3[m];
         }
         System.out.println("Сумма: " + res1);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
