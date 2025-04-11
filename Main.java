@@ -363,7 +363,7 @@ public class Main {
 
         // break & continue
         // 1. Выведите все числа от 1 до 20, кроме тех, что делятся на 3
-        for (int l = 0; l <= 20; l++) {
+        for (int l = 1; l <= 20; l++) {
             if (l % 3 == 0) {
                 continue;
             }
